@@ -171,10 +171,10 @@ Create a `screenshots/` folder at the root of the repo and add these files (same
 
 | Screen                    | Preview |
 |-----------------------------|---------|
-| S3 Static Website             | ![S3 Website](screenshots/S3_Website.png) |
-| Registration Form (Index Page) | ![Index Page](screenshots/Index_Page.png) |
-| API Gateway                     | ![API Gateway](screenshots/API_Gateway.png) |
-| Lambda Function                   | ![Lambda](screenshots/Lambda_Function.png) |
+| S3 Static Website             | ![S3 Website](screenshots/S3-Website.png) |
+| Registration Form (Index Page) | ![Index Page](screenshots/Index-Page.png) |
+| API Gateway                     | ![API Gateway](screenshots/API-Gateway.png) |
+| Lambda Function                   | ![Lambda](screenshots/Lambda-Function.png) |
 | DynamoDB Table                      | ![DynamoDB](screenshots/DynamoDB.png) |
 | Successful Registration               | ![Register Success](screenshots/Register.png) |
 
