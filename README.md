@@ -165,24 +165,18 @@ aws-serverless-web-app/
 
 ## 📸 Screenshots
 
-Add screenshots to a `screenshots/` folder at the root of the repo (create it if it doesn't exist), then reference them here with relative paths — GitHub renders them automatically once pushed.
+> Before pushing: double-check no real personal data (names/emails) is visible in the form screenshots — swap in placeholder test data if needed.
 
-**Steps:**
-1. Take screenshots of your S3 website, API Gateway console, Lambda function, and DynamoDB table
-2. Save them inside a new `screenshots/` folder in your repo, e.g. `screenshots/s3-website.png`
-3. Add this table to your README (edit the paths/filenames to match what you actually saved):
+Create a `screenshots/` folder at the root of the repo and add these files (same names used below), then commit and push — GitHub renders them automatically.
 
-```markdown
-| Screen                  | Preview |
-|--------------------------|---------|
-| S3 Static Website         | ![S3 Website](screenshots/s3-website.png) |
-| API Gateway                | ![API Gateway](screenshots/api-gateway.png) |
-| Lambda Function             | ![Lambda](screenshots/lambda.png) |
-| DynamoDB Table               | ![DynamoDB](screenshots/dynamodb.png) |
-| Successful Registration       | ![Success](screenshots/success.png) |
-```
-
-4. Commit and push — images render directly in the README once the files exist at those paths.
+| Screen                    | Preview |
+|-----------------------------|---------|
+| S3 Static Website             | ![S3 Website](screenshots/S3_Website.png) |
+| Registration Form (Index Page) | ![Index Page](screenshots/Index_Page.png) |
+| API Gateway                     | ![API Gateway](screenshots/API_Gateway.png) |
+| Lambda Function                   | ![Lambda](screenshots/Lambda_Function.png) |
+| DynamoDB Table                      | ![DynamoDB](screenshots/DynamoDB.png) |
+| Successful Registration               | ![Register Success](screenshots/Register.png) |
 
 ---
 
