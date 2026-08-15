@@ -165,10 +165,6 @@ aws-serverless-web-app/
 
 ## 📸 Screenshots
 
-> Before pushing: double-check no real personal data (names/emails) is visible in the form screenshots — swap in placeholder test data if needed.
-
-Create a `screenshots/` folder at the root of the repo and add these files (same names used below), then commit and push — GitHub renders them automatically.
-
 | Screen                    | Preview |
 |-----------------------------|---------|
 | S3 Static Website             | ![S3 Website](screenshots/S3-Website.png) |
