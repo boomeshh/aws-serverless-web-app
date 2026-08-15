@@ -1,31 +1,58 @@
-<form id="studentForm">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
 
-    <input
-        type="text"
-        placeholder="Name"
-        required
-    >
+    <!-- IMPORTANT: this link is what makes style.css actually apply -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <input
-        type="email"
-        placeholder="Email"
-        required
-    >
+    <form id="studentForm">
 
-    <input
-        type="text"
-        placeholder="College"
-        required
-    >
+        <h1>Student Registration</h1>
+        <p>Fill in your details below to register</p>
 
-    <input
-        type="text"
-        placeholder="Course"
-        required
-    >
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
 
-    <button type="submit">Register</button>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
 
-</form>
+        <label for="college">College</label>
+        <input
+            type="text"
+            id="college"
+            placeholder="Enter your college"
+            required
+        >
 
-<script src="script.js"></script>
+        <label for="course">Course</label>
+        <input
+            type="text"
+            id="course"
+            placeholder="Enter your course"
+            required
+        >
+
+        <button type="submit">Register</button>
+
+        <div id="responseMessage" class="message"></div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

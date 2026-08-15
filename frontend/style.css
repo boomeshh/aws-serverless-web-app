@@ -1,15 +1,166 @@
-body {
-    font-family: Arial;
-    text-align: center;
-    margin-top: 100px;
+/* ============================================
+   Student Registration — style.css
+   Palette: Ink Navy #1B2A4A · Slate #4B5A73
+            Parchment #F7F4EC · Amber #D98E2B
+            Success Green #2E7D4F
+   Type: 'Poppins' (display) + 'Inter' (body)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-input {
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(180deg, #F7F4EC 0%, #EFE9DA 100%);
+    color: #1B2A4A;
+    min-height: 100vh;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Card wrapper — the form itself */
+.form-card,
+form {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 40px 36px 36px;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(27, 42, 74, 0.06),
+                0 12px 32px rgba(27, 42, 74, 0.10);
+    border-top: 4px solid #D98E2B;
+    text-align: left;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #1B2A4A;
+    margin: 0 0 6px;
+}
+
+/* Optional subtitle under the heading */
+h1 + p,
+h2 + p {
+    text-align: center;
+    color: #4B5A73;
+    font-size: 0.9rem;
+    margin: 0 0 28px;
+}
+
+label {
     display: block;
-    margin: 10px auto;
-    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4B5A73;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 18px 0 6px;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    margin: 0 auto 4px;
+    padding: 12px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #1B2A4A;
+    background: #FBFAF7;
+    border: 1.5px solid #DDD6C4;
+    border-radius: 8px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+input::placeholder {
+    color: #9AA3B2;
+}
+
+input:hover,
+select:hover {
+    border-color: #B9AE8E;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #D98E2B;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(217, 142, 43, 0.18);
 }
 
 button {
-    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    margin: 26px auto 0;
+    padding: 13px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: #1B2A4A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #263B66;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus-visible {
+    outline: 3px solid #D98E2B;
+    outline-offset: 2px;
+}
+
+/* Success / response message area */
+.message,
+#responseMessage {
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.message.success,
+#responseMessage.success {
+    background: rgba(46, 125, 79, 0.1);
+    color: #2E7D4F;
+    border: 1px solid rgba(46, 125, 79, 0.25);
+}
+
+.message.error,
+#responseMessage.error {
+    background: rgba(197, 63, 63, 0.1);
+    color: #C53F3F;
+    border: 1px solid rgba(197, 63, 63, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 32px 14px;
+    }
+    .form-card,
+    form {
+        padding: 32px 22px 28px;
+    }
 }
