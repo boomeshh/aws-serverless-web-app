@@ -1,0 +1,1 @@
+console.log("AWS Serverless Web App loaded");
